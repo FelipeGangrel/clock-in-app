@@ -1,13 +1,24 @@
-import { Card, Input } from '@/components/shared'
+import { Card, Input, Label, Button, FormRow } from '@/components/shared'
 
 export function SignInForm() {
   return (
-    <Card>
+    <Card shadow="lg">
       <form className="flex flex-col space-y-4">
-        <div className="flex flex-col space-y-1">
-          <label htmlFor="email">Email</label>
-          <Input name="email" id="email" />
-        </div>
+        <FormRow>
+          <Label required htmlFor="email">
+            Email
+          </Label>
+          <Input name="email" type="email" id="email" />
+        </FormRow>
+        <FormRow>
+          <Label required htmlFor="password">
+            Password
+          </Label>
+          <Input name="password" type="password" id="password" />
+        </FormRow>
+        <FormRow>
+          <Button type="submit">Sign In</Button>
+        </FormRow>
       </form>
     </Card>
   )
