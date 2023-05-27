@@ -1,9 +1,11 @@
 import { Card, Input, Label, Button, FormRow } from '@/components/shared'
+import TopIcon from './TopIcon'
 
 export function SignInForm() {
   return (
-    <Card shadow="lg" className="w-full max-w-sm">
-      <form className="flex flex-col space-y-4">
+    <Card shadow="lg" className="relative w-full max-w-sm items-center pt-12">
+      <TopIcon />
+      <form className="flex w-full flex-col space-y-4">
         <FormRow>
           <Label required htmlFor="email">
             Email
