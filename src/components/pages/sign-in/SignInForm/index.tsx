@@ -2,7 +2,7 @@ import { Card, Input, Label, Button, FormRow } from '@/components/shared'
 
 export function SignInForm() {
   return (
-    <Card shadow="lg">
+    <Card shadow="lg" className="w-full max-w-sm">
       <form className="flex flex-col space-y-4">
         <FormRow>
           <Label required htmlFor="email">
@@ -15,6 +15,11 @@ export function SignInForm() {
             Password
           </Label>
           <Input name="password" type="password" id="password" />
+        </FormRow>
+        <FormRow>
+          <Button type="button" variant="secondary">
+            Forgot my password
+          </Button>
         </FormRow>
         <FormRow>
           <Button type="submit">Sign In</Button>

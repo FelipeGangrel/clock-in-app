@@ -18,10 +18,9 @@
 
 body {
   color: var(--foreground);
+  min-height: 100vh;
   background: linear-gradient(
     to bottom right,
-    var(--background-end),
-    var(--background-start) 20%,
     var(--background-start) 80%,
     var(--background-end)
   );
