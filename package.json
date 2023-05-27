@@ -10,6 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore \"**/*.{js,jsx,json,md,ts,tsx}\""
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.9",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
