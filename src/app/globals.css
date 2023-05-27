@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-slate-100 text-slate-700;
+:root {
+  --background-start: #f8fafc;
+  --background-end: #c7d2fe;
+  --foreground: #2d3748;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-start: #0f172a;
+    --background-end: #1e1b4b;
+    --foreground: #f8fafc;
   }
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(
+    to bottom right,
+    var(--background-end),
+    var(--background-start) 20%,
+    var(--background-start) 80%,
+    var(--background-end)
+  );
 }
