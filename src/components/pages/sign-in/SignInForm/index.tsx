@@ -1,4 +1,10 @@
-import { Card, Input, Label, Button, FormRow } from '@/components/shared'
+import {
+  Card,
+  Input,
+  Label,
+  Button,
+  FormRow,
+} from '@/components/shared/agnostic'
 import TopIcon from './TopIcon'
 
 export function SignInForm() {
