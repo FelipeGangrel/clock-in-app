@@ -14,7 +14,10 @@ export const Header: React.FC<DialogHeaderProps> = ({
   return (
     <div
       {...props}
-      className={twMerge('flex items-center justify-between', props.className)}
+      className={twMerge(
+        'flex items-center justify-between px-6 py-4',
+        props.className
+      )}
     >
       <RadixDialog.Title
         {...titleProps}
@@ -25,7 +28,7 @@ export const Header: React.FC<DialogHeaderProps> = ({
       >
         {children}
       </RadixDialog.Title>
-      <RadixDialog.Close className="h-6 w-6 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">
+      <RadixDialog.Close className="inline-flex h-6 w-6 items-center justify-center text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200">
         <X />
       </RadixDialog.Close>
     </div>

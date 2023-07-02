@@ -13,6 +13,8 @@ export const Description = RadixDialog.Description
 export * from './Portal'
 export * from './Content'
 export * from './Header'
+export * from './Body'
+export * from './Footer'
 
 Root.displayName = 'Dialog.Root'
 Trigger.displayName = 'Dialog.Trigger'

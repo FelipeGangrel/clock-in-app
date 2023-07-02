@@ -7,7 +7,7 @@ export const Body: React.FC<DialogBodyProps> = ({ children, ...props }) => {
     <div
       {...props}
       className={twMerge(
-        'text-sm text-slate-500 dark:text-slate-400',
+        'max-h-[60vh] overflow-y-auto px-6 py-6 text-sm text-slate-500 dark:text-slate-400',
         props.className
       )}
     >
