@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Card,
   Input,
@@ -5,6 +7,7 @@ import {
   Button,
   FormRow,
 } from '@/components/shared/agnostic'
+import Modal from './Modal'
 import TopIcon from './TopIcon'
 
 export function SignInForm() {
@@ -23,6 +26,9 @@ export function SignInForm() {
             Password
           </Label>
           <Input name="password" type="password" id="password" />
+        </FormRow>
+        <FormRow>
+          <Modal />
         </FormRow>
         <FormRow>
           <Button type="button" variant="secondary">
