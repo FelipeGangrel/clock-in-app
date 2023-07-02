@@ -2,6 +2,6 @@ import * as RadixAccessibleIcon from '@radix-ui/react-accessible-icon'
 
 export type AccessibleIconProps = RadixAccessibleIcon.AccessibleIconProps
 
-export const AccessibleIcon = RadixAccessibleIcon.Root
+export const Root = RadixAccessibleIcon.Root
 
-AccessibleIcon.displayName = 'AccessibleIcon'
+Root.displayName = 'AccessibleIcon.Root'
